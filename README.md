@@ -1,4 +1,4 @@
-# My Tailwind Project
+# My Portfolio
 
 Proyek ini menggunakan Tailwind CSS untuk menghasilkan dua file CSS terpisah dari dua sumber yang berbeda. Kami menggunakan Tailwind CLI untuk membangun file CSS dan mengelola dependensi proyek melalui npm.
 
