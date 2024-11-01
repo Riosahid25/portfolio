@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .main .filter__content {
+    @apply flex justify-between gap-x-2 m-[2rem_0_2.5rem] bg-textColorLighten-0 p-[.375rem] rounded-[.75rem] overflow-hidden;
+  }
+}
+
+@layer utilities {
+  .main .filters .filter__content .filter__button {
+    @apply w-full p-4 text-titleColor-0 text-smallFontSize font-medium rounded-[.75rem] bg-transparent cursor-pointer duration-[.3s] border-none outline-none hover:bg-bodyColor-0 tracking-[1px];
+  }
+
+  .main .filters .filter__content li {
+    @apply w-full;
+  }
+
+  /* active button filter */
+  .main .filters .filter__content .filter-tab-active {
+    @apply bg-bodyColor-0;
+  }
+}

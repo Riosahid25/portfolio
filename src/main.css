@@ -1,0 +1,280 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-bodyColor-0 duration-[.2s];
+  }
+
+  @font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../asset/font/PlusJakartaSans-ExtraLightItalic.woff") format("woff");
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../asset/font/PlusJakartaSans-BoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../asset/font/PlusJakartaSans-Bold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../asset/font/PlusJakartaSans-ExtraBold.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../asset/font/PlusJakartaSans-ExtraBoldItalic.woff") format("woff");
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../asset/font/PlusJakartaSans-ExtraLight.woff") format("woff");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../asset/font/PlusJakartaSans-LightItalic.woff") format("woff");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../asset/font/PlusJakartaSans-MediumItalic.woff") format("woff");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../asset/font/PlusJakartaSans-Medium.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../asset/font/PlusJakartaSans-Regular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../asset/font/PlusJakartaSans-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../asset/font/PlusJakartaSans-Italic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../asset/font/PlusJakartaSans-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Plus Jakarta Sans";
+    src: url("../asset/font/PlusJakartaSans-SemiBoldItalic.woff") format("woff");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  html {
+    @apply font-jakarta box-border;
+  }
+
+  h1 {
+    @apply font-bold;
+  }
+
+  :root {
+    /* Colors */
+    --hue: 207;
+    --sat: 90%;
+    --lig: 61%;
+    --first-color: hsl(var(--hue), var(--sat), var(--lig));
+    --first-color-alt: hsl(var(--hue), var(--sat), 57%); /* -4% */
+    --title-color: hsl(var(--hue), 12%, 15%);
+    --text-color: hsl(var(--hue), 12%, 45%);
+    --text-color-light: hsl(var(--hue), 8%, 75%);
+    --text-color-lighten: hsl(var(--hue), 8%, 92%);
+    --body-color: hsl(var(--hue), 100%, 99%);
+    --container-color: #fff;
+
+    /* Font and typography */
+    --h1-font-size: 1.3rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: 0.938rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+  }
+
+  ul {
+    @apply list-none;
+  }
+
+  a {
+    @apply no-underline;
+  }
+  img {
+    @apply max-w-full h-auto;
+  }
+
+  .container-x {
+    @apply max-w-[968px] ml-[1.5rem] mr-[1.5rem];
+  }
+
+  /* PROFILE */
+  .profile {
+    @apply relative pt-[3.5rem];
+  }
+
+  .profile__container {
+    @apply gap-y-[2rem];
+  }
+}
+
+@layer components {
+  .button__small {
+    @apply inline-flex items-center bg-firstColor-0 text-[#fff] rounded-[.5rem] transition-[.3s] p-[.6rem_1rem];
+    box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), 0.25);
+  }
+}
+
+@layer utilities {
+  .profile .profile__container {
+    @apply grid;
+  }
+
+  /* Hide & show project, work, writing */
+  .filters [data-content] {
+    @apply hidden;
+  }
+
+  .filters__active[data-content] {
+    @apply grid;
+  }
+
+  /* ==========SCOLL BAR============ */
+  ::-webkit-scrollbar {
+    @apply w-[.6rem] rounded-[.5rem];
+    background-color: hsl(var(--hue), 8%, 66%);
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-[.5rem];
+    background-color: hsl(var(--hue), 8%, 54%);
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(var(--hue), 8%, 44%);
+  }
+
+  /*=========== THEME ======================== */
+  .profile .change-theme {
+    @apply absolute top-[1.5rem] right-0 text-[1.25rem] text-titleColor-0 cursor-pointer duration-[.3s];
+  }
+
+  .profile .change-theme:hover {
+    @apply text-firstColor-0;
+  }
+
+  .dark-theme .profile__info-description {
+    @apply text-textColor-0;
+  }
+
+  .dark-theme .main .filter__content {
+    @apply bg-containerColor-0;
+  }
+
+  .dark-theme .profile__name {
+    @apply text-textColor-0;
+  }
+}
+
+body.dark-theme {
+  --title-color: hsl(var(--hue), 12%, 95%);
+  --text-color: hsl(var(--hue), 12%, 75%);
+  --body-color: hsl(var(--hue), 40%, 8%);
+  --container-color: hsl(var(--hue), 24%, 12%);
+}
+
+/* ====== breakpoint ================== */
+
+/* ==== For Small Devices ============= */
+.container-x {
+  @apply sm:ml-[1rem] sm:mr-[1rem];
+}
+
+.profile__info {
+  @apply sm:gap-x-[1.5rem];
+}
+
+.project__content,
+.work__content {
+  @apply grid-cols-1 sm:grid-cols-2 sm:gap-2;
+}
+
+/* ==== For Medium Devices ============= */
+.container-x {
+  @apply md:w-[40rem] md:m-[3rem_auto];
+}
+
+.project__content,
+.work__content {
+  @apply md:grid-cols-2 md:gap-2 lg:gap-x-6;
+}
+
+.main .filters .filter__content,
+.main .filters .filters__section {
+  @apply md:w-[40rem] md:m-[3rem_auto];
+}
+
+/* ==== For lerge Devices ============= */
+.main .filters .filter__content {
+  @apply lg:w-[20rem] md:w-[20rem];
+}
+
+.main .filters .filters__section,
+.container-x {
+  @apply lg:w-[40rem];
+}

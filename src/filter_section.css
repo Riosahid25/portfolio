@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .project__content .project__card,
+  .work__content .project__card {
+    @apply relative rounded-[.5rem] overflow-hidden mb-4 min-w-[308px] min-h-[246px];
+  }
+
+  .project__content .project__card img,
+  .work__content .project__card img {
+    @apply w-full h-full object-cover;
+  }
+
+  .project__content .project__card .project__modal,
+  .work__content .project__card .project__modal {
+    @apply absolute w-full h-full bottom-[-100%] left-0 grid items-end p-[1.5rem_1.25rem] duration-[0.3s];
+    /* background: linear-gradient(180deg, hsla(var(--hue), 24%, 40%, 0.3) 0%, hsla(var(--hue), 24%, 4%, 1) 95%); */
+    background: linear-gradient(180deg, rgba(3, 27, 43, 0.5) 1%, rgba(3, 27, 43, 0.9) 70%, rgba(3, 27, 43, 1.5) 100%);
+  }
+
+  .project__content .project__card .projects__subtitle,
+  .project__content .project__card .projects__title,
+  .work__content .project__card .projects__subtitle,
+  .work__content .project__card .projects__title {
+    @apply text-white font-medium;
+  }
+
+  .project__content .project__card .projects__subtitle,
+  .work__content .project__card .projects__subtitle {
+    @apply text-2xl font-bold;
+  }
+  .project__content .project__card .projects__title,
+  .work__content .project__card .projects__title {
+    @apply text-h3FontSize mb-[.75rem];
+  }
+
+  .project__content .project__card .projects__button,
+  .work__content .project__card .projects__button {
+    @apply p-[.5rem];
+  }
+
+  .project__content .project__card:hover .project__modal,
+  .work__content .project__card:hover .project__modal {
+    @apply bottom-0;
+  }
+}

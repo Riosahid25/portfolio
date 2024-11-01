@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* PROFILE */
+  .profile__container .profile__data {
+    @apply grid text-center;
+  }
+
+  .profile__container .profile__social_buttons {
+    @apply flex justify-center gap-x-[.4rem];
+  }
+}
+
+@layer utilities {
+  /* PROFILE */
+  .profile__container .profile__data .profile__user {
+    @apply w-[100px] h-[100px] flex justify-center items-center;
+  }
+
+  .profile__container .profile__data .profile__user img {
+    @apply w-full;
+  }
+
+  .profile__container .profile__data .profile__border {
+    @apply border-solid border-[3.5px] border-firstColor-0 rounded-[50%] w-[115px] h-[115px] justify-self-center grid place-items-center mb-3;
+  }
+
+  .profile__container .profile__data .profile__name {
+    @apply text-h1FontSize;
+  }
+
+  .profile__container .profile__data .profile__professional {
+    @apply text-smallFontSize font-medium text-textColor-0 mb-4 leading-5;
+  }
+
+  /* .profile .profile__container .profile__data .profile__social_buttons .profile__social-link {
+    @apply inline-flex items-center bg-firstColor-0 text-[#fff] rounded-[.5rem] transition-[.3s] p-[.6rem_1rem];
+    box-shadow: 0 8px 24px hsla(var(--hue), var(--sat), var(--lig), 0.25);
+  } */
+  .profile .profile__container .profile__data .profile__social_buttons .profile__social-link:hover {
+    @apply bg-textColorLight-0;
+  }
+
+  .profile .profile__container .profile__data .profile__social-link i {
+    @apply text-[1.25rem];
+  }
+}

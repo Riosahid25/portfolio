@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .footer .footer__copy {
+    @apply block m-[2.5rem_0_2rem] text-center text-smallerFontSize text-textColorLight-0;
+  }
+}
