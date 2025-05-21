@@ -9,7 +9,8 @@
 
   @font-face {
     font-family: "Plus Jakarta Sans";
-    src: url("../asset/font/PlusJakartaSans-ExtraLightItalic.woff") format("woff");
+    src: url("../asset/font/PlusJakartaSans-ExtraLightItalic.woff")
+      format("woff");
     font-weight: 200;
     font-style: italic;
     font-display: swap;
@@ -41,7 +42,8 @@
 
   @font-face {
     font-family: "Plus Jakarta Sans";
-    src: url("../asset/font/PlusJakartaSans-ExtraBoldItalic.woff") format("woff");
+    src: url("../asset/font/PlusJakartaSans-ExtraBoldItalic.woff")
+      format("woff");
     font-weight: bold;
     font-style: italic;
     font-display: swap;
@@ -271,7 +273,7 @@ body.dark-theme {
 
 /* ==== For lerge Devices ============= */
 .main .filters .filter__content {
-  @apply lg:w-[20rem] md:w-[20rem];
+  @apply lg:w-[21rem] md:w-[21rem];
 }
 
 .main .filters .filters__section,

@@ -454,7 +454,8 @@ body {
 @font-face {
   font-family: "Plus Jakarta Sans";
 
-  src: url("../asset/font/PlusJakartaSans-ExtraLightItalic.woff") format("woff");
+  src: url("../asset/font/PlusJakartaSans-ExtraLightItalic.woff")
+      format("woff");
 
   font-weight: 200;
 
@@ -502,7 +503,8 @@ body {
 @font-face {
   font-family: "Plus Jakarta Sans";
 
-  src: url("../asset/font/PlusJakartaSans-ExtraBoldItalic.woff") format("woff");
+  src: url("../asset/font/PlusJakartaSans-ExtraBoldItalic.woff")
+      format("woff");
 
   font-weight: bold;
 
@@ -937,13 +939,13 @@ body.dark-theme {
 
 @media (min-width: 768px) {
   .main .filters .filter__content {
-    width: 20rem;
+    width: 21rem;
   }
 }
 
 @media (min-width: 1024px) {
   .main .filters .filter__content {
-    width: 20rem;
+    width: 21rem;
   }
 
   .main .filters .filters__section,
