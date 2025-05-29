@@ -17,7 +17,12 @@
   .work__content .project__card .project__modal {
     @apply absolute w-full h-full bottom-[-100%] left-0 grid items-end p-[1.5rem_1.25rem] duration-[0.3s];
     /* background: linear-gradient(180deg, hsla(var(--hue), 24%, 40%, 0.3) 0%, hsla(var(--hue), 24%, 4%, 1) 95%); */
-    background: linear-gradient(180deg, rgba(3, 27, 43, 0.5) 1%, rgba(3, 27, 43, 0.9) 70%, rgba(3, 27, 43, 1.5) 100%);
+    background: linear-gradient(
+      180deg,
+      rgba(3, 27, 43, 0.5) 1%,
+      rgba(3, 27, 43, 0.9) 70%,
+      rgba(3, 27, 43, 1.5) 100%
+    );
   }
 
   .project__content .project__card .projects__subtitle,
@@ -29,7 +34,7 @@
 
   .project__content .project__card .projects__subtitle,
   .work__content .project__card .projects__subtitle {
-    @apply text-2xl font-bold;
+    @apply text-xl font-bold;
   }
   .project__content .project__card .projects__title,
   .work__content .project__card .projects__title {
