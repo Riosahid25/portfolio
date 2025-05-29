@@ -607,9 +607,17 @@ video {
 
 .project__content .project__card .projects__subtitle,
   .work__content .project__card .projects__subtitle {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
   font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .project__content .project__card .projects__subtitle,
+  .work__content .project__card .projects__subtitle {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 .project__content .project__card .projects__title,

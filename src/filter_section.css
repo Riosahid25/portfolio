@@ -34,7 +34,7 @@
 
   .project__content .project__card .projects__subtitle,
   .work__content .project__card .projects__subtitle {
-    @apply text-xl font-bold;
+    @apply md:text-xl text-2xl font-bold;
   }
   .project__content .project__card .projects__title,
   .work__content .project__card .projects__title {
